@@ -1,6 +1,6 @@
 
 import "./styles.css";
-import { useState, useEffect, createContext, useContext } from "react";
+import { useState, useEffect } from "react";
 
 function ListingData({ dataFetched ,nodata}) {
   
@@ -58,7 +58,7 @@ nodata
 
       setfetchedData(datatoset);
     } else if (
-      endIndex != userData.length &&
+      endIndex !== userData.length &&
       endIndex + 5 > userData.length &&
       startIndex + 5 < userData.length
     ) {
@@ -74,7 +74,7 @@ nodata
   function handleLeftClick() {
     var ind = 0;
     var out = 0;
-    if (endIndex == userData.length) {
+    if (endIndex === userData.length) {
       out = userData.length - endIndex + startIndex;
       ind = startIndex - 5;
       setendIndex(() => out);
@@ -121,7 +121,7 @@ const [startIndex, setStartIndex] = useState(0);
 const [userData, setUserData] = useState([]);
 const [nodata,setNodata]=useState(false);
 const [datafetched, setfetchedData] = useState([]);
-  const pageSize = 5;
+  //const pageSize = 5;
   useEffect(() => {
     const fetchProjects = async () => {
       try {
@@ -134,7 +134,7 @@ const [datafetched, setfetchedData] = useState([]);
 	if(data && data.length && data.length<5){
 			setendIndex(data.length)
 		}
-	if(!data || data.length==0){
+	if(!data || data.length===0){
 		setNodata(true);
 		
 		
