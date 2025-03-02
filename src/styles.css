@@ -1,0 +1,91 @@
+
+* {
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+}
+.paginq {
+padding-bottom: 16px;
+    padding-left: 10%;
+}
+td {
+  padding: 0;
+  border: solid thin #dadada;
+}
+th {
+  padding: 10px 20px;
+  text-align: center;
+  border: solid thin #dadada;
+}
+
+.leftclick{
+ padding: 10px;
+  padding-bottom: 20px;
+}
+.rightclick {
+  padding: 10px;
+  padding-bottom: 20px;
+}
+.leftbackarrow {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+tr {
+  display: table-row;
+}
+.nodataclass {
+ text-align:enter;
+}
+td {
+  vertical-align: middle;
+  display: table-cell;
+  padding: 5px;
+  margin: 5px;
+}
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
